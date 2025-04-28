@@ -11,7 +11,7 @@ export default function FriendListItem({ avatar, name, isOnline }) {
         width="48"
       />
       <p className={css.name}>{name}</p>
-      <p className={clsx(isOnline ? css.isOnline : css.offline)}>
+      <p className={clsx(isOnline ? css.isOnline : css.isOffline)}>
         {isOnline ? 'Online' : 'Offline'}
       </p>
     </li>
